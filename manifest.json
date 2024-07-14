@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Real auction price",
+  "version": "1.0",
+
+  "description": "Shows you the real price of an item in John Pye auctions, with buyer's premium and VAT.",
+
+  "icons": {
+    "48": "icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.johnpyeauctions.co.uk/*"],
+      "js": ["real-auction-price.js"]
+    }
+  ]
+}
